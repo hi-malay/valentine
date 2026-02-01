@@ -1,36 +1,65 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 💖 Valentine Proposal App
 
-## Getting Started
+A magical, interactive, and premium web experience designed to help you ask that special someone to be your Valentine. Built with Next.js, Tailwind CSS, and a touch of magic.
 
-First, run the development server:
+## ✨ Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Interactive Proposal**: A beautiful UI that asks the big question.
+- **The "No" Button Challenge**: A playful "No" button that dodges the cursor, making "Yes" the only easy choice!
+- **Celebratory Effects**: 
+  - 🎉 Explosion of confetti on "Yes".
+  - ✨ Continuous glitter and sparkle overlay for a romantic atmosphere.
+- **Link Sharing Flow**: 
+  - Enter your partner's name.
+  - Generate a unique, shareable link.
+  - Send it to them and wait for the "YES!"
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Getting Started
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Prerequisites
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Node.js 18.x or later
+- npm / yarn / pnpm
 
-## Learn More
+### Installation
 
-To learn more about Next.js, take a look at the following resources:
+1. **Clone the repository:**
+   ```bash
+   git clone git@github.com:hi-malay/valentine.git
+   cd valentine
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. **Install dependencies:**
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. **Run the development server:**
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
 
-## Deploy on Vercel
+4. **Open in browser:**
+   Navigate to [http://localhost:3000](http://localhost:3000)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🛠️ Built With
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **[Next.js](https://nextjs.org/)** - React Framework for the App Router.
+- **[Tailwind CSS](https://tailwindcss.com/)** - For the sleek, modern styling.
+- **[Canvas Confetti](https://www.npmjs.com/package/canvas-confetti)** - For the celebratory animations.
+- **Lucide React** - For the beautiful iconography.
+
+## 💌 How to Use
+
+1. **Visit the landing page**: Enter the name of your partner.
+2. **Generate the Link**: Click "Go!" to create a custom URL (e.g., `?name=Sweetheart`).
+3. **Share**: Copy the generated link and send it via WhatsApp, iMessage, or Instagram.
+4. **The Proposal**: Your partner will see a personalized message asking them to be your Valentine!
+
+---
+
+Made with ❤️ for special moments.
