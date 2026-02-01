@@ -222,11 +222,23 @@ function HomeContent() {
   const [shareLink, setShareLink] = useState("");
   const [copied, setCopied] = useState(false);
 
-  const handleGenerateLink = () => {
-    if (inputValue.trim()) {
+  const handleGenerateLink = async () => {
+    const trimmedName = inputValue.trim();
+    if (trimmedName) {
       const url = new URL(window.location.origin);
-      url.searchParams.set("name", inputValue.trim());
+      url.searchParams.set("name", trimmedName);
       setShareLink(url.toString());
+
+      // Save to GitHub
+      try {
+        await fetch("/api/save-name", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ name: trimmedName }),
+        });
+      } catch (error) {
+        console.error("Failed to save name to GitHub:", error);
+      }
     }
   };
 
